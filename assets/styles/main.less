@@ -1,0 +1,81 @@
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:less
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+// endbower
+
+@import "common/_variables";
+@import "common/_global";
+@import "components/_buttons";
+@import "components/_comments";
+@import "components/_forms";
+@import "components/_grid";
+@import "components/_wp-classes";
+@import "layouts/_header";
+@import "layouts/_sidebar";
+@import "layouts/_footer";
+@import "layouts/_pages";
+@import "layouts/_posts";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
+
+header{
+	nav {
+		float: right;
+	}
+	
+	.navbar-brand {
+		padding:8px;
+	}
+	
+	.smallheaderlogo, .bigheaderlogo {						
+		max-height:35px;
+	}		
+}
+.navbar-default {
+	background-color:#ffffff;
+	border: none;
+}
+
+.eventcontainer {	
+	margin-top:50px;
+	.row {
+		.col-md-4 {
+			height: 300px;
+			color: #ffffff;
+			h1 {				
+				font-family: 'Open Sans', sans-serif;
+				font-weight:800;
+				text-shadow: 3px 3px 0px #000, 5px 5px 0px #3C8ED3;
+			}
+			span
+			{
+				font-family: 'Open Sans', sans-serif;
+				font-weight:800;
+				text-shadow: 2px 2px 3px #000, -2px -2px 3px #000;;
+			}		
+			a
+			{
+				position:absolute;
+				right:10px;
+				bottom:0px;			
+				text-shadow:none;
+			}			
+		}
+	}
+}
+
+@media (min-width: @screen-lg-min) {
+	header {
+		.smallheaderlogo {			
+			transition: max-height 500ms;		
+			max-height:35px;
+		}		
+		.bigheaderlogo {		
+			transition: max-height 500ms;
+			max-height:100px;
+		}	
+	}
+	.eventcontainer {
+		margin-top:115px;
+	}
+}
